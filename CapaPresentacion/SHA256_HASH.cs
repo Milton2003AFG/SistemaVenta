@@ -5,10 +5,11 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CapaDatos
+namespace CapaPresentacion
 {
     class SHA256_HASH
-    {        public static string GetSHA256(string str)
+    {
+        public static string GetSHA256(string str)
         {
             SHA256 sha256 = SHA256Managed.Create();
             ASCIIEncoding encoding = new ASCIIEncoding();

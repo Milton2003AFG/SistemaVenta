@@ -75,12 +75,15 @@ namespace CapaPresentacion
         {
             string mensaje = string.Empty;
 
+            string claveEncriptada = SHA256_HASH.GetSHA256(txtclave.Text);
+
+
             Usuario objusuario = new Usuario() {
                 IdUsuario = Convert.ToInt32(txtid.Text),
                 Documento = txtdocumento.Text,
                 NombreCompleto = txtnombrecompleto.Text,
                 Correo = txtcorreo.Text,
-                Clave = txtclave.Text,
+                Clave = claveEncriptada,
                 oRol = new Rol() { IdRol = Convert.ToInt32(((OpcionCombo)cborol.SelectedItem).Valor) },
                 Estado = Convert.ToInt32(((OpcionCombo)cboestado.SelectedItem).Valor) == 1 ? true : false
             };
@@ -92,7 +95,7 @@ namespace CapaPresentacion
                 if (idusuariogenerado != 0)
                 {
 
-                    dgvdata.Rows.Add(new object[] {"",idusuariogenerado,txtdocumento.Text,txtnombrecompleto.Text,txtcorreo.Text,txtclave.Text,
+                    dgvdata.Rows.Add(new object[] {"",idusuariogenerado,txtdocumento.Text,txtnombrecompleto.Text,txtcorreo.Text,claveEncriptada,
                 ((OpcionCombo)cborol.SelectedItem).Valor.ToString(),
                 ((OpcionCombo)cborol.SelectedItem).Texto.ToString(),
                 ((OpcionCombo)cboestado.SelectedItem).Valor.ToString(),
@@ -118,7 +121,7 @@ namespace CapaPresentacion
                     row.Cells["Documento"].Value = txtdocumento.Text;
                     row.Cells["NombreCompleto"].Value = txtnombrecompleto.Text;
                     row.Cells["Correo"].Value = txtcorreo.Text;
-                    row.Cells["Clave"].Value = txtclave.Text;
+                    row.Cells["Clave"].Value = claveEncriptada;
                     row.Cells["IdRol"].Value = ((OpcionCombo)cborol.SelectedItem).Valor.ToString();
                     row.Cells["Rol"].Value = ((OpcionCombo)cborol.SelectedItem).Texto.ToString();
                     row.Cells["EstadoValor"].Value = ((OpcionCombo)cboestado.SelectedItem).Valor.ToString();
