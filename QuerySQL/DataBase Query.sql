@@ -49,7 +49,7 @@ IdUsuario int primary key identity,
 Documento varchar(50),
 NombreCompleto varchar(50),
 Correo varchar(50),
-Clave varchar(50),
+Clave nvarchar(64),
 IdRol int references ROL(IdRol),
 Estado bit,
 FechaRegistro datetime default getdate()
@@ -91,9 +91,7 @@ MontoTotal decimal(10,2),
 FechaRegistro datetime default getdate()
 )
 
-
 go
-
 
 create table DETALLE_COMPRA(
 IdDetalleCompra int primary key identity,
@@ -121,9 +119,7 @@ MontoTotal decimal(10,2),
 FechaRegistro datetime default getdate()
 )
 
-
 go
-
 
 create table DETALLE_VENTA(
 IdDetalleVenta int primary key identity,
@@ -153,12 +149,11 @@ go
 
 go
 
-
 create PROC SP_REGISTRARUSUARIO(
 @Documento varchar(50),
 @NombreCompleto varchar(100),
 @Correo varchar(100),
-@Clave varchar(100),
+@Clave nvarchar(100),
 @IdRol int,
 @Estado bit,
 @IdUsuarioResultado int output,
@@ -180,8 +175,6 @@ begin
 	end
 	else
 		set @Mensaje = 'No se puede repetir el documento para más de un usuario'
-
-
 end
 
 go
@@ -191,7 +184,7 @@ create PROC SP_EDITARUSUARIO(
 @Documento varchar(50),
 @NombreCompleto varchar(100),
 @Correo varchar(100),
-@Clave varchar(100),
+@Clave nvarchar(100),
 @IdRol int,
 @Estado bit,
 @Respuesta bit output,

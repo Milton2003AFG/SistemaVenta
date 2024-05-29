@@ -157,5 +157,15 @@ namespace CapaPresentacion.Properties {
                 return ResourceManager.GetString("PlantillaVenta", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Universidad_don_bosco {
+            get {
+                object obj = ResourceManager.GetObject("Universidad_don_bosco", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

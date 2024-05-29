@@ -38,7 +38,9 @@
             this.btningresar = new FontAwesome.Sharp.IconButton();
             this.btncancelar = new FontAwesome.Sharp.IconButton();
             this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -160,12 +162,23 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "INICIAR SESION";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::CapaPresentacion.Properties.Resources.Universidad_don_bosco;
+            this.pictureBox1.Location = new System.Drawing.Point(440, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(69, 66);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(539, 206);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btncancelar);
             this.Controls.Add(this.btningresar);
@@ -181,6 +194,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -198,5 +212,6 @@
         private FontAwesome.Sharp.IconButton btningresar;
         private FontAwesome.Sharp.IconButton btncancelar;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

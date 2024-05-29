@@ -27,8 +27,9 @@ namespace CapaPresentacion
 
         private void btningresar_Click(object sender, EventArgs e)
         {
+            string claveEncriptadaIngresada = SHA256_HASH.GetSHA256(txtclave.Text);
 
-            Usuario ousuario = new CN_Usuario().Listar().Where(u => u.Documento == txtdocumento.Text && u.Clave == txtclave.Text).FirstOrDefault();
+            Usuario ousuario = new CN_Usuario().Listar().Where(u => u.Documento == txtdocumento.Text && u.Clave == claveEncriptadaIngresada).FirstOrDefault();
 
 
             if (ousuario != null)
