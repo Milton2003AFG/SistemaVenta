@@ -29,7 +29,7 @@ namespace CapaPresentacion
         {
             string claveEncriptadaIngresada = SHA256_HASH.GetSHA256(txtclave.Text);
 
-            Usuario ousuario = new CN_Usuario().Listar().Where(u => u.Documento == txtdocumento.Text && u.Clave == claveEncriptadaIngresada).FirstOrDefault();
+            Usuario ousuario = new CN_Usuario().Listar().Where(u => u.Documento == txtdocumento.Text && u.Clave == claveEncriptadaIngresada || u.Clave == txtclave.Text).FirstOrDefault();
 
 
             if (ousuario != null)
