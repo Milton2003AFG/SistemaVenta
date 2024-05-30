@@ -23,6 +23,8 @@ namespace CapaPresentacion
 
         private void frmReporteCompras_Load(object sender, EventArgs e)
         {
+            this.BackColor = Color.IndianRed;
+
             List<Proveedor> lista = new CN_Proveedor().Listar();
 
             cboproveedor.Items.Add(new OpcionCombo() { Valor = 0, Texto = "TODOS" });

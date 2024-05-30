@@ -31,6 +31,7 @@ namespace CapaPresentacion
 
         private void frmNegocio_Load(object sender, EventArgs e)
         {
+            this.BackColor = Color.IndianRed;
             bool obtenido = true;
             byte[] byteimage = new CN_Negocio().ObtenerLogo(out obtenido);
 

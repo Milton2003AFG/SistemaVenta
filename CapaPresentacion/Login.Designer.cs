@@ -43,7 +43,7 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.SteelBlue;
+            this.label1.BackColor = System.Drawing.Color.IndianRed;
             this.label1.Dock = System.Windows.Forms.DockStyle.Left;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
@@ -53,7 +53,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.SteelBlue;
+            this.label2.BackColor = System.Drawing.Color.IndianRed;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(12, 166);
@@ -64,7 +64,7 @@
             // 
             // iconPictureBox1
             // 
-            this.iconPictureBox1.BackColor = System.Drawing.Color.SteelBlue;
+            this.iconPictureBox1.BackColor = System.Drawing.Color.IndianRed;
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Store;
             this.iconPictureBox1.IconColor = System.Drawing.Color.White;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -110,7 +110,7 @@
             // 
             // btningresar
             // 
-            this.btningresar.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btningresar.BackColor = System.Drawing.Color.IndianRed;
             this.btningresar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btningresar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btningresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -131,7 +131,7 @@
             // 
             // btncancelar
             // 
-            this.btncancelar.BackColor = System.Drawing.Color.Firebrick;
+            this.btncancelar.BackColor = System.Drawing.Color.Brown;
             this.btncancelar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btncancelar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btncancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

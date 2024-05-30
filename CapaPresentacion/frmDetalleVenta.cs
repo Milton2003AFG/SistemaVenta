@@ -25,6 +25,7 @@ namespace CapaPresentacion
 
         private void frmDetalleVenta_Load(object sender, EventArgs e)
         {
+            this.BackColor = Color.IndianRed;
             txtbusqueda.Select();
         }
 

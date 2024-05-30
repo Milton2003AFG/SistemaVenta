@@ -25,6 +25,7 @@ namespace CapaPresentacion.Modales
 
         private void mdProveedor_Load(object sender, EventArgs e)
         {
+            this.BackColor = Color.IndianRed;
 
             foreach (DataGridViewColumn columna in dgvdata.Columns)
             {

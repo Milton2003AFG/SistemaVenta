@@ -251,7 +251,7 @@
             // 
             // btnlimpiar
             // 
-            this.btnlimpiar.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnlimpiar.BackColor = System.Drawing.Color.Brown;
             this.btnlimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnlimpiar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnlimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -272,7 +272,7 @@
             // 
             // btnguardar
             // 
-            this.btnguardar.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnguardar.BackColor = System.Drawing.Color.IndianRed;
             this.btnguardar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnguardar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnguardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -342,6 +342,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.IndianRed;
             this.ClientSize = new System.Drawing.Size(1133, 552);
             this.Controls.Add(this.btnbuscar);
             this.Controls.Add(this.dgvdata);

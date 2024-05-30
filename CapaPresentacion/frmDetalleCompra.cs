@@ -129,5 +129,10 @@ namespace CapaPresentacion
                 }
             }
         }
+
+        private void frmDetalleCompra_Load(object sender, EventArgs e)
+        {
+            this.BackColor = Color.IndianRed;
+        }
     }
 }

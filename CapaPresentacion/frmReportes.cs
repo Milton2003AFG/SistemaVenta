@@ -16,5 +16,10 @@ namespace CapaPresentacion
         {
             InitializeComponent();
         }
+
+        private void frmReportes_Load(object sender, EventArgs e)
+        {
+            this.BackColor = Color.IndianRed;
+        }
     }
 }

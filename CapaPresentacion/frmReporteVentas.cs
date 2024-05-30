@@ -23,6 +23,8 @@ namespace CapaPresentacion
 
         private void frmReporteVentas_Load(object sender, EventArgs e)
         {
+            this.BackColor = Color.IndianRed;
+
             foreach (DataGridViewColumn columna in dgvdata.Columns)
             {
                 cbobusqueda.Items.Add(new OpcionCombo() { Valor = columna.Name, Texto = columna.HeaderText });
